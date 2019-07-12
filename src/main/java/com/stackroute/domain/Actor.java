@@ -2,15 +2,16 @@ package com.stackroute.domain;
 
 public class Actor {
 
+     String actorname;
+    String actorgender;
+    int actorage;
+
     public Actor(String actorname, String actorgender, int actorage) {
         this.actorname = actorname;
         this.actorgender = actorgender;
         this.actorage = actorage;
     }
 
-    String actorname;
-    String actorgender;
-    int actorage;
     public void displayActorInformation()
     {
         System.out.println("actorname:"+actorname);
