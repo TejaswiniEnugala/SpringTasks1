@@ -9,9 +9,15 @@
         <constructor-arg name="actorgender" value="female"/>
         <constructor-arg name="actorage" value="21"/>
     </bean>
+    <bean id="beanLifeCycleDemoBean" class="com.stackroute.domain.BeanLifeCycleDemoBean">
+    </bean>
+    <bean id="beanLifeCycle" class="com.stackroute.domain.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy"/>
     <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
         <constructor-arg name="actor" ref="actor1"/>
     </bean>
     <bean name="movie1" class="com.stackroute.domain.Movie" autowire="constructor">
     </bean>
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.domain.BeanPostProcessorDemoBean">
+    </bean>
+
 </beans>
